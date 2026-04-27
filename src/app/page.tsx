@@ -23,11 +23,12 @@ export default function LandingPage() {
       <main className="flex flex-col lg:flex-row">
         {/* 2. THE CONTENT LAYER (Left 60%) */}
         <div
-          className="relative z-10 w-full lg:w-[60%]
+          className="relative z-10 w-full 
                       border-r-0 lg:border-r border-slate-grey/5
                       flex flex-col"
         >
           <Hero />
+
           <AboutEcosystem />
           <TargetAudience />
           <HowItWorks />
@@ -35,9 +36,8 @@ export default function LandingPage() {
         </div>
 
         {/* SPACER FOR RIGHT 40% (maintains layout) */}
-        <div className="hidden lg:block lg:w-[40%]" />
+        {/*<div className="hidden lg:block lg:w-[40%]" />*/}
       </main>
-
       {/* MOBILE BACKGROUND */}
       <div className="lg:hidden fixed inset-0 z-0 bg-linear-to-br from-off-white via-off-white to-powder-blue/10 pointer-events-none" />
     </div>
